@@ -79,6 +79,8 @@ foreach ($report as $idx => $val) {
         $sortKey[$idx] = $val['messages'] * $val['users'];
     }
   }
+array_multisort($sortKey, SORT_ASC, $data);
+
 
 $message = [
     'blocks' => [
